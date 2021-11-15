@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .console {
+    font-family:'Courier New', Courier, monospace;   
+    width: 1400px;
+    height: 700px;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  
+  .console header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  
+  .console .consolebody {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px;
+    height: calc(100% - 40px);
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+  }
+  
+  .console .consolebody p {
+    line-height: 1.5rem;
+  }
+
+  .CMD_Header{
+      font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .github_link{
+      font-family: 'Courier New', Courier, monospace;
+      color: #ffffff;
+  }
+  .blink {
+    animation: blink-animation 0.5s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.5s steps(5, start) infinite;
+    display: inline-block;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  .input_cmd{
+      background-color: #000;
+      border-color: #ffffff;
+      color: #ffffff;
+      display: inline-block;
+  }
+  html {
+    display: flex;
+    height:100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background: rgb(0, 0, 0);
+  }
+    
+  body::before, body::after {
+    font-weight: bold;
+    font-family: 'SF Mono', 'Courier New', Courier, monospace;
+    font-size: 42px;
+    color: #ffffff;
+  }
+  
+  
+  body::before {
+    display: inline-block;
+    padding-top: 3rem;
+    content: "Never gonna give you up...";
+  }
+  .body::after{
+    margin-left: 16px;
+    display: inline;
+    content: "_";
+    background: #ffffff;
+    animation: blink 0.5s infinite;
+    width: 10px;
+  }
+  
+  .blink{
+    margin-left: 16px;
+    display: inline;
+    content: "_";
+    background: #ffffff;
+    animation: blink 0.5s infinite;
+    width: 10px;
+  }
+  
+  @keyframes blink {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+
+  #run{
+    background-color: #000;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .github{
+      background-color: #000;
+      color: #ffffff;
+      font-family: 'Courier New', Courier, monospace;
+  }
+
+  #run:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .github:hover{
+      background-color: rgb(255, 255, 255);
+      color: #000000;
+      font-family: 'Courier New', Courier, monospace;
+  }
